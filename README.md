@@ -3,6 +3,7 @@ Marketplace-style API
 
 Features browsing products, registering users, posting new listings and editing/removing those listings.
 Uses Basic authentication, with passwords being encrypted with bcrypt. Data validation is used when adding users or listings.
+Mocha testing is present, but not completely efficient.
 
 Postman formats:
 Use raw data, json
