@@ -7,6 +7,7 @@ Uses Basic authentication, with passwords being encrypted with bcrypt. Data vali
 Postman formats:
 Use raw data, json
 POST /register :
+
 {
     "fName": "", 
     "lName": "",  
@@ -18,6 +19,7 @@ POST /register :
 
 Use form-data with 'image' as files, required fields below
 POST /item/add  :
+
 name,
 description,
 price, 
@@ -28,6 +30,7 @@ image (format: files)
 
 Requires you to enter all fields again. Seems like only raw data works for this, so use that
 PUT /item/modify/:id
+
 {
     "name": "",
     "description": "" ,
