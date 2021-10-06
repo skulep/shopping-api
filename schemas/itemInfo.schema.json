@@ -1,0 +1,93 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example2.json",
+    "type": "object",
+    "title": "The Item schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "name": "A green door",
+            "description": "A green door with a lock and a handle on each side.",
+            "price": 19.5,
+            "location": "Helsinki",
+            "category": "Furniture",
+            "delivery": "Pickup"
+        }
+    ],
+    "required": [
+        "name",
+        "description",
+        "price",
+        "location",
+        "category",
+        "delivery"
+    ],
+    "properties": {
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "description": "Item name / title. Displays that.",
+            "default": "",
+            "examples": [
+                "A green door"
+            ]
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "A description about the item.",
+            "default": "",
+            "examples": [
+                "A green door with a lock and a handle on each side."
+            ]
+        },
+        "price": {
+            "$id": "#/properties/price",
+            "type": "string",
+            "title": "The price schema",
+            "description": "Asking price for the item. In euros only! (Supposed to be a number, Postman didn't like it..)",
+            "default": "",
+            "examples": [
+                "19.5"
+            ]
+        },
+        "location": {
+            "$id": "#/properties/location",
+            "type": "string",
+            "title": "The location schema",
+            "description": "The item's location. Can have multiple parts, such as 'Australia, Melbourne'.",
+            "default": "",
+            "examples": [
+                "Helsinki",
+                "Norway"
+            ]
+        },
+        "category": {
+            "$id": "#/properties/category",
+            "type": "string",
+            "title": "The category schema",
+            "description": "The category.",
+            "default": "",
+            "examples": [
+                "Furniture",
+                "Vehicle"
+            ]
+        },
+        "delivery": {
+            "$id": "#/properties/delivery",
+            "type": "string",
+            "title": "The delivery schema",
+            "description": "Shipping methods, item poster can mention which ones are accepted.",
+            "default": "",
+            "examples": [
+                "Pickup",
+                "Shipping",
+                "Any"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

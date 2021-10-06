@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example1.json",
+    "type": "object",
+    "title": "The User schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "fName": "Test",
+            "lName": "Dummy",
+            "email": "testdummy@mail",
+            "username": "test",
+            "password": "test",
+            "mobileNumber": 1112223334
+        }
+    ],
+    "required": [
+        "fName",
+        "lName",
+        "email",
+        "username",
+        "password",
+        "mobileNumber"
+    ],
+    "properties": {
+        "fName": {
+            "$id": "#/properties/fName",
+            "type": "string",
+            "title": "The fName schema",
+            "description": "User's first name.",
+            "default": "",
+            "examples": [
+                "Test"
+            ]
+        },
+        "lName": {
+            "$id": "#/properties/lName",
+            "type": "string",
+            "title": "The lName schema",
+            "description": "User's last name. Displayed on item page with first name.",
+            "default": "",
+            "examples": [
+                "Dummy"
+            ]
+        },
+        "email": {
+            "$id": "#/properties/email",
+            "type": "string",
+            "title": "The email schema",
+            "description": "User's email address, displayed on item page.",
+            "default": "",
+            "examples": [
+                "testdummy@mail"
+            ]
+        },
+        "username": {
+            "$id": "#/properties/username",
+            "type": "string",
+            "title": "The username schema",
+            "description": "The username. Used to log in.",
+            "default": "",
+            "examples": [
+                "test"
+            ]
+        },
+        "password": {
+            "$id": "#/properties/password",
+            "type": "string",
+            "title": "The password schema",
+            "description": "The password, used to log in. Perhaps encrypted.",
+            "default": "",
+            "examples": [
+                "test"
+            ]
+        },
+        "mobileNumber": {
+            "$id": "#/properties/mobileNumber",
+            "type": "number",
+            "title": "The mobileNumber schema",
+            "description": "The user's mobile number, displayed on item page.",
+            "default": 0,
+            "examples": [
+                1112223334
+            ]
+        }
+    },
+    "additionalProperties": true
+}
